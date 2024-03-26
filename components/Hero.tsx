@@ -6,6 +6,7 @@ import { Download, Send } from "lucide-react";
 import Socials from "./Socials";
 import profilePic from "../public/icon2.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -28,11 +29,17 @@ const Hero = () => {
               Hello! My name is Jonathan Cho
             </h1>
             <p className="pt-8 pb-8 max-w-[650px] text-muted-foreground font-light text-lg mb-8 mx-auto xl:mx-0">
-              I am a dedicated Software Engineer with a comprehensive background
-              from the University of Washington Tacoma, specializing in Computer
-              Science & Systems. With a solid foundation in data structures,
-              algorithm design, and system architecture, I excel in developing
-              robust, scalable software solutions.
+              I am a dedicated{" "}
+              <span className="font-bold">Software Engineer</span> with a
+              comprehensive background from the{" "}
+              <span className="font-bold">
+                University of Washington Tacoma,
+              </span>{" "}
+              specializing in Computer Science & Systems. With a solid
+              foundation in data structures, algorithm design, and system
+              architecture, I enjoy building{" "}
+              <span className="italic">sites & apps</span>. My focus is{" "}
+              <span className="font-bold underline">React (Next.js)</span>.
             </p>
 
             {/* Buttons */}
@@ -56,8 +63,9 @@ const Hero = () => {
             {/* Hero Image */}
             <div>
               <Image
-                height={400}
+                className="rounded-full"
                 width={400}
+                height={400}
                 src={profilePic}
                 alt="Jonathan Cho"
               />
@@ -66,7 +74,7 @@ const Hero = () => {
         </div>
 
         {/* Icon */}
-        <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
+        <div className="hidden md:flex justify-center animate-bounce">
           <RiArrowDownSFill className="text-3xl text-primary" />
         </div>
       </div>
