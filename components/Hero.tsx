@@ -26,7 +26,7 @@ const Hero = () => {
         duration: 0.7,
       }}
     >
-      <section className="py-12 xl:py-24 h-[70vh] xl:pt-28 bg-primary-light">
+      <section className="py-12 xl:py-24 xl:pt-28 bg-primary-light">
         <div className="container mx-auto">
           <div className="flex flex-row justify-between gap-x-8">
             {/* Hero Content */}
