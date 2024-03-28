@@ -5,21 +5,22 @@ import { RiGithubFill, RiLinkedinBoxFill } from "react-icons/ri";
 const Socials = () => {
   return (
     <div
-      className="flex flex-row gap-x-6 mx-auto xl:mx-0 text-foreground text-[35px]
+      className="flex flex-row gap-x-8 mx-auto xl:mx-0 text-foreground text-[48px]
       text-center
-    text-2xl
     pt-12
     transition-all"
     >
       <Link
-        className="hover:text-muted-foreground dark:text-zinc-400 dark:hover:text-zinc-100"
-        href="/"
+        className="hover:text-muted-foreground dark:text-zinc-400 dark:hover:text-zinc-100
+        focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+        href="https://github.com/jon-jc"
       >
         <RiGithubFill />
       </Link>
       <Link
-        className="hover:text-muted-foreground dark:text-zinc-400 dark:hover:text-zinc-100"
-        href="/"
+        className="hover:text-muted-foreground dark:text-zinc-400 dark:hover:text-zinc-100
+        focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+        href="https://www.linkedin.com/in/jon-jc/"
       >
         <RiLinkedinBoxFill />
       </Link>
