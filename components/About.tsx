@@ -40,11 +40,11 @@ export default function About() {
           <p className="mb-3">
             My technical toolkit includes{" "}
             <span className="font-medium">
-              TypeScript, React, Next.js, Java, Python, Prisma,
+              TypeScript, React, Next.js, Java, Python,
             </span>{" "}
-            and <span className="font-medium">MongoDB</span>, complemented by a
-            growing proficiency in <span className="font-medium"></span> and{" "}
-            <span className="font-medium">MySQL</span>.
+            and <span className="font-medium">Prisma</span>, complemented by a
+            growing proficiency in <span className="font-medium">MySQL</span>{" "}
+            and <span className="font-medium">MongoDB</span>.
           </p>
           <p className="font-medium">
             Seeking a <span className="font-bold">full-time position</span> as a
