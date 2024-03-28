@@ -25,7 +25,7 @@ export default function About() {
       ref={ref}
     >
       <div className="text-3xl font-bold pb-4">About me</div>
-      <Card className="bg-background dark:bg-black border border-transparent dark:hover:bg-zinc-900 dark:hover:border-slate-900 hover:border/ transition dark:border-white/[0.2 rounded-lg px-10 py-10">
+      <Card className="bg-white hover: dark:bg-black border border-transparent hover:bg-secondary active:scale-105 dark:hover:bg-zinc-900 dark:hover:border-slate-900 transition dark:border-white/[0.2] rounded-lg px-10 py-10">
         <CardContent className="text-primary">
           <p className="mb-3">
             Recent graduate with a Bachelor of Arts in Computer Science &

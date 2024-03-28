@@ -59,14 +59,10 @@ const Project = ({
           <Image
             src={imageUrl}
             alt="Projects I worked on"
-            className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-       
-        group-hover:scale-110
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-
-        transition
+            className="w-full max-w-xs mx-auto rounded-t-lg shadow-2xl transition
+            group-hover:scale-110 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2
+    sm:max-w-md
+    md:absolute md:top-8 md:-right-40 md:w-[28.25rem] md:group-hover:scale-110 md:group-hover:-translate-x-3 md:group-hover:translate-y-3 md:group-hover:-rotate-2
         "
           />
         </section>
