@@ -1,31 +1,72 @@
-//components
+"use client";
+
+import React from "react";
+import { motion } from "framer-motion";
+import { links } from "@/lib/data";
+import Link from "next/link";
+import clsx from "clsx";
+import { useActiveSectionContext } from "@/components/ui/active-section-content";
 import { ThemeToggler } from "./ThemeToggler";
 import Logo from "./Logo";
-import Navbar from "./Navbar";
-import MobileNavbar from "./MobileNavbar";
 
-const Header = () => {
+export default function Header() {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
   return (
-    <div>
-      <div className="container mx-auto">
-        <div className="flex justify-between">
-          <Logo />
+    <header className="z-[999] relative">
+      <motion.div
+        className="fixed top-0 sm:w-[30rem] left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem]  sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+        initial={{ y: -100, x: "-50%", opacity: 0 }}
+        animate={{ y: 0, x: "-50%", opacity: 1 }}
+      ></motion.div>
 
-          <div className="flex items-center gap-x-10">
-            {/* NAVBAR HERE */}
+      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
+        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+          {links.map((link) => (
+            <motion.li
+              className="h-3/4 flex items-center justify-center relative"
+              key={link.hash}
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+            >
+              <Link
+                className={clsx(
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-foreground dark:hover:text-zinc-300",
+                  {
+                    "text-gray-950 dark:text-gray-200":
+                      activeSection === link.name,
+                  }
+                )}
+                href={link.hash}
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
+              >
+                {link.name}
 
-            <Navbar />
+                {link.name === activeSection && (
+                  <motion.span
+                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  ></motion.span>
+                )}
+              </Link>
+            </motion.li>
+          ))}
+        </ul>
+      </nav>
+      <div className="flex flex-row justify-between px-4 pt-2">
+        <Logo />
 
-            <ThemeToggler />
-            {/* Mobile Navbar */}
-            <div className="md:hidden">
-              <MobileNavbar />
-            </div>
-          </div>
-        </div>
+        <ThemeToggler />
       </div>
-    </div>
+    </header>
   );
-};
-
-export default Header;
+}

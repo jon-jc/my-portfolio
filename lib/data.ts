@@ -2,33 +2,61 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/icon.png";
-import rmtdevImg from "@/public/icon.png";
-import wordanalyticsImg from "@/public/icon.png";
+import chatImg from "@/public/chat.png";
+import socialImg from "@/public/social.png";
+import ecomImg from "@/public/clothes.png";
+import vectoImg from "@/public/vecto.png";
 
 export const projectsData = [
   {
     title: "HE4RTS",
     description:
       "Developed Twitter-inspired social media platform, applying Agile methodologies to enhance user-centric design.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "Prisma",
+      "MongoDB",
+      "NextAuth",
+    ],
+    imageUrl: socialImg,
+    projectUrl: "https://socialmedia-clone-sable.vercel.app/",
+  },
+  {
+    title: "VectoAI",
+    description:
+      "AI Icon generator, leveraging OpenAI's DALL-E model to generate unique, custom icons for users, enabling creative, personalized branding for diverse applications.",
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "Prisma",
+      "MongoDB",
+      "NextAuth",
+    ],
+    imageUrl: vectoImg,
+    projectUrl: "https://dall-e-one-puce.vercel.app/",
   },
   {
     title: "EchoTalk",
     description:
       "Developed a comprehensive full-stack chat application leveraging Next.js and React for the frontend, enabling dynamic, interactive user interfaces with optimized performance, setting the groundwork for community building.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "MySQL"],
+    imageUrl: chatImg,
+    projectUrl: "https://chat-app-production-1a3a.up.railway.app/sign-up",
   },
   {
     title: "E-Commerce Dashboard",
     description:
       "Developed a multi-vendor e-commerce platform enabling seamless operation and management of diverse online stores, including secure authentication and Stripe for payment processing, emphasizing security and efficiency.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    tags: ["React", "Next.js", "TypeScript", "Stripe", "MySQL", "Prisma"],
+    imageUrl: ecomImg,
+    projectUrl: "https://e-commerce-store-sandy.vercel.app/",
   },
-] as const;
+];
 
 export const skills = [
   {
@@ -85,10 +113,6 @@ export const links = [
   {
     name: "Skills",
     hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
   },
   {
     name: "Contact",
