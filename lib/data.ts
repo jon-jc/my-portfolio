@@ -38,7 +38,7 @@ export const projectsData = [
       "NextAuth",
     ],
     imageUrl: vectoImg,
-    projectUrl: "https://dall-e-one-puce.vercel.app/",
+    projectUrl: "https://dall-e-eta-eight.vercel.app/",
   },
   {
     title: "EchoTalk",
