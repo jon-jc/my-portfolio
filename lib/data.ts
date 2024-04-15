@@ -6,8 +6,59 @@ import chatImg from "@/public/chat.png";
 import socialImg from "@/public/social.png";
 import ecomImg from "@/public/clothes.png";
 import vectoImg from "@/public/vecto.png";
+import aerolodgeImg from "@/public/aerolodge.png";
 
 export const projectsData = [
+  {
+    title: "AeroLodge",
+    description:
+      "Created AeroLodge, a cutting-edge, full-stack rental marketplace platform engineered with the latest web technologies",
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "Prisma",
+      "MongoDB",
+      "NextAuth",
+    ],
+    imageUrl: aerolodgeImg,
+    projectUrl: "https://aerolodge-market.vercel.app/",
+  },
+
+  {
+    title: "VectoAI",
+    description:
+      "AI Icon generator, leveraging OpenAI's DALL-E model to generate unique, custom icons for users, enabling creative, personalized branding for diverse applications.",
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "Prisma",
+      "PostgreSQL",
+      "Clerk",
+      "Stripe",
+    ],
+    imageUrl: vectoImg,
+    projectUrl: "https://dall-e-eta-eight.vercel.app/",
+  },
+  {
+    title: "EchoTalk",
+    description:
+      "Developed a comprehensive full-stack chat application leveraging Next.js and React for the frontend, enabling dynamic, interactive user interfaces with optimized performance, setting the groundwork for community building.",
+    tags: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Tailwind",
+      "MySQL",
+      "Clerk",
+      "Prisma",
+    ],
+    imageUrl: chatImg,
+    projectUrl: "https://chat-app-production-1a3a.up.railway.app/sign-up",
+  },
   {
     title: "HE4RTS",
     description:
@@ -23,30 +74,6 @@ export const projectsData = [
     ],
     imageUrl: socialImg,
     projectUrl: "https://socialmedia-clone-sable.vercel.app/",
-  },
-  {
-    title: "VectoAI",
-    description:
-      "AI Icon generator, leveraging OpenAI's DALL-E model to generate unique, custom icons for users, enabling creative, personalized branding for diverse applications.",
-    tags: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Tailwind",
-      "Prisma",
-      "MongoDB",
-      "NextAuth",
-    ],
-    imageUrl: vectoImg,
-    projectUrl: "https://dall-e-eta-eight.vercel.app/",
-  },
-  {
-    title: "EchoTalk",
-    description:
-      "Developed a comprehensive full-stack chat application leveraging Next.js and React for the frontend, enabling dynamic, interactive user interfaces with optimized performance, setting the groundwork for community building.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "MySQL"],
-    imageUrl: chatImg,
-    projectUrl: "https://chat-app-production-1a3a.up.railway.app/sign-up",
   },
   {
     title: "E-Commerce Dashboard",
