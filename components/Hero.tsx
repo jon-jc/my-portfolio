@@ -34,7 +34,7 @@ const Hero = () => {
             <div className="max-w-[700px] justify-center mx-auto xl:mx-0">
               <div
                 className="text-sm uppercase mb-4 font-semibold text-primary tracking-[4px]
-            text-center xl:text-left"
+            text-center xl:text-left py-10"
               >
                 Software Engineer
               </div>
