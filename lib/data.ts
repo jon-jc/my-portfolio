@@ -57,7 +57,7 @@ export const projectsData = [
       "Prisma",
     ],
     imageUrl: chatImg,
-    projectUrl: "https://chat-app-production-1a3a.up.railway.app/sign-up",
+    projectUrl: "https://chat-app-seven-fawn.vercel.app/sign-up",
   },
   {
     title: "HE4RTS",
